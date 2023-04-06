@@ -6,7 +6,7 @@ function Footer() {
     <div className="footer">
       <div className="content">
         <div className="logo">
-          <a href="/">My Shop</a>
+          <a href="/">Vựa Nông Sản</a>
         </div>
         <div className="links">
           <ul>
@@ -36,7 +36,6 @@ function Footer() {
           </a>
         </div>
       </div>
-      <div className="bottom">&copy; 2023 My Shop. All rights reserved.</div>
     </div>
   );
 }
