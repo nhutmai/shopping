@@ -1,3 +1,8 @@
+import {
+  HomeOutlined,
+  LoginOutlined,
+  ShoppingCartOutlined,
+} from "@ant-design/icons";
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "./style.css";
@@ -6,7 +11,11 @@ function Header() {
   return (
     <div className="header">
       <div className="logo">
-        <a href="/">Vựa Nông Sản</a>
+        <a href="/">
+          {" "}
+          <HomeOutlined style={{ fontSize: 50 }} />
+          Vựa Nông Sản
+        </a>
       </div>
       <div className="menu">
         <ul>
@@ -26,9 +35,11 @@ function Header() {
         <button>Search</button>
       </div>
       <div className="login">
+        <LoginOutlined />
         <NavLink to="/login">đăng nhập</NavLink>
       </div>
       <div className="cart">
+        <ShoppingCartOutlined style={{ color: "#ff6600", fontSize: 20 }} />
         <NavLink to="/cart">giỏ hàng (0)</NavLink>
       </div>
     </div>

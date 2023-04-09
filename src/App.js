@@ -10,6 +10,7 @@ import about from "./components/about/about";
 import product from "./components/products/product";
 import cart from "./components/cart/cart";
 import Login from "./page/login/login";
+import Homepage from "./components/home/home";
 
 function App() {
   useEffect(() => {
@@ -24,8 +25,8 @@ function App() {
       <Header />
       <Routes>
         <Route path="/login" Component={Login} />
-        <Route path="/" Component={ProductList} />
-        <Route path="/products" Component={product} />
+        <Route path="/" Component={Homepage} />
+        <Route path="/products" Component={ProductList} />
         <Route path="/cart" Component={cart} />
         <Route path="/about" Component={about} />
       </Routes>
