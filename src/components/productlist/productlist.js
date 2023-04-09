@@ -1,7 +1,16 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import getproduct from "../../API/getproduct";
 import "./style.css";
 
-function ProductList({ products }) {
+function ProductList() {
+  const [products, setProduct] = useState([]);
+  useEffect(() => {
+    const fetchProduct = async () => {
+      const product = await getproduct.getAll();
+      setProduct(product);
+    };
+    fetchProduct();
+  }, []);
   return (
     <div className="product-list">
       {products.map((product) => (
