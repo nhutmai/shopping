@@ -4,13 +4,14 @@ import Header from "./components/header/header";
 import ProductList from "./components/productlist/productlist";
 import Product from "./API/getproduct";
 import { useEffect, useState } from "react";
+import getproduct from "./API/getproduct";
 
 function App() {
   const sp = [
     {
       name: "ca chua",
       image:
-        "https://www.google.com/url?sa=i&url=https%3A%2F%2Fvi.wikipedia.org%2Fwiki%2FC%25C3%25A0_chua&psig=AOvVaw30pSgEu9TFuXdX6rZUjlac&ust=1680978548423000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPi8rZuzmP4CFQAAAAAdAAAAABAE",
+        "https://dalatfarm.net/wp-content/uploads/2021/07/ca-chua-beed.jpg",
       description: "description 1",
       price: 20000,
       unit: "kg",
@@ -58,6 +59,13 @@ function App() {
       id: "6",
     },
   ];
+  useEffect(() => {
+    const fetchProduct = async () => {
+      const product = await getproduct.getAll();
+      console.log(product);
+    };
+    fetchProduct();
+  }, []);
   return (
     <div className="App">
       <Header />
