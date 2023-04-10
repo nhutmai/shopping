@@ -3,17 +3,20 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: #f8f8f8;
+  background-color: #85dcba;
   border-bottom: 1px solid #ccc;
+  color: white;
 }
-
 .logo a {
   font-size: 24px;
   font-weight: bold;
-  color: #333;
+  color: white;
   text-decoration: none;
 }
 
+.menu {
+  color: #fff;
+}
 .menu ul {
   list-style: none;
   display: flex;
@@ -27,9 +30,7 @@
 
 .menu a {
   font-size: 18px;
-  color: #333;
   text-decoration: none;
-  transition: color 0.2s ease-in-out;
 }
 
 .menu a:hover {
@@ -59,7 +60,7 @@
 
 .cart a {
   font-size: 18px;
-  color: #333;
+  color: rgb(247, 245, 245);
   text-decoration: none;
 }
 .cart a.active {
@@ -67,6 +68,6 @@
 }
 .login a {
   font-size: 18px;
-  color: #333;
+  color: rgb(250, 246, 246);
   text-decoration: none;
 }
