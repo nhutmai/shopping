@@ -6,9 +6,6 @@ function Login() {
   return (
     <div id="main">
       <div className="wrapper">
-        <div className="introduce" id="left">
-          <h1 className="login">Login</h1>
-        </div>
         <div id="right">
           <form action="#link" method="post" id="form1">
             <div classNames="form-group">
@@ -44,7 +41,6 @@ function Login() {
           </form>
         </div>
       </div>
-      <div className="space"></div>
     </div>
   );
 }
