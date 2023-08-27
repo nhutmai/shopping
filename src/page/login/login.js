@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
-import "./validate.js";
+// import "./validate.js";
 
 function Login() {
   const handleonblurrequire = (e) => {
@@ -28,7 +28,7 @@ function Login() {
   return (
     <div id="main">
       <form action="#link" method="post" id="form1">
-        <div classNames="form-group">
+        <div className="form-group">
           <input
             className="input"
             name="name"
@@ -54,12 +54,12 @@ function Login() {
           />
           <span className="warning" id="passerr"></span>
         </div>
-        <button type="submit" className="logina">
+        <button type="button" className="logina">
           đăng nhập
         </button>
         <a href="">quên mật khẩu</a>
-        <hr classNameh="90%" text-align="center" />
-        <button type="menu" className="loginb">
+        <hr className="90%" textAlign="center" />
+        <button type="button" className="loginb">
           tạo tài khoản mới
         </button>
       </form>
