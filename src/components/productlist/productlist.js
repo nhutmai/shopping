@@ -6,11 +6,13 @@ function ProductList() {
   const [products, setProduct] = useState([]);
   useEffect(() => {
     const fetchProduct = async () => {
-      const product = await getproduct.getAll();
+      const product = await getproduct();
+      console.log(product);
       setProduct(product);
     };
     fetchProduct();
   }, []);
+
   return (
     <div className="product-list">
       {products.map((product) => (

@@ -1,10 +1,12 @@
-import axiosClient from "./axiosClient";
+import axios from "axios";
 
-const getproduct = {
-  getAll() {
-    const url = "/getproduct";
-    return axiosClient.get(url);
-  },
+const getproduct = () => {
+  return axios
+    .get("https://64305f60b289b1dec4c720aa.mockapi.io/getproduct")
+    .then((response) => response.data)
+    .catch((err) => {
+      throw err;
+    });
 };
 
 export default getproduct;
