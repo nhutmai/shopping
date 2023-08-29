@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import postid from "../../API/post";
 import "./style.css";
 // import "./validate.js";
 
@@ -25,6 +26,14 @@ function Login() {
     warning.textContent = "";
     e.target.classList.remove("error");
   };
+  const [useraccount, setuseraccount] = useState([]);
+  useEffect(() => {
+    const login = async () => {
+      const user = await postid();
+      setuseraccount(user);
+    };
+    login();
+  }, []);
   return (
     <div id="main">
       <form action="#link" method="post" id="form1">
@@ -57,12 +66,13 @@ function Login() {
         <button type="button" className="logina">
           đăng nhập
         </button>
-        <a href="">quên mật khẩu</a>
-        <hr className="90%" textAlign="center" />
+        <a className="quenmk">quên mật khẩu</a>
+        <hr className="90%" />
         <button type="button" className="loginb">
           tạo tài khoản mới
         </button>
       </form>
+      <p>dữ liệu người dùng {useraccount}</p>
     </div>
   );
 }

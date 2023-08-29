@@ -1,4 +1,4 @@
-import { ShopTwoTone } from "@ant-design/icons";
+// import { ShopTwoTone } from "@ant-design/icons";
 import React from "react";
 import "./style.css";
 function Homepage() {

@@ -1,10 +1,11 @@
 import axios from "axios";
 
-var url = "http://localhost:4000/product";
+var url = "http://localhost:4000/account";
+var account = { name: "student", pass: "1" };
 
 const getproduct = () => {
   return axios
-    .get(url)
+    .post(url, account)
     .then((response) => {
       return response.data;
     })

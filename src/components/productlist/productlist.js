@@ -7,7 +7,6 @@ function ProductList() {
   useEffect(() => {
     const fetchProduct = async () => {
       const product = await getproduct();
-      console.log(product);
       setProduct(product);
     };
     fetchProduct();
