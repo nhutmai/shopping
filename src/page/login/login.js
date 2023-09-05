@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import postid from "../../API/post";
 import "./style.css";
-// import "./validate.js";
 
 function Login() {
   const handleonblurrequire = (e) => {
@@ -33,7 +32,9 @@ function Login() {
       setuseraccount(user);
     };
     login();
+    console.log(useraccount);
   }, []);
+
   return (
     <div id="main">
       <form action="#link" method="post" id="form1">
@@ -63,16 +64,17 @@ function Login() {
           />
           <span className="warning" id="passerr"></span>
         </div>
-        <button type="button" className="logina">
+        <button type="submit" className="logina">
           đăng nhập
         </button>
-        <a className="quenmk">quên mật khẩu</a>
+        <a className="quenmk" href="#stop">
+          quên mật khẩu
+        </a>
         <hr className="90%" />
         <button type="button" className="loginb">
           tạo tài khoản mới
         </button>
       </form>
-      <p>dữ liệu người dùng {useraccount}</p>
     </div>
   );
 }

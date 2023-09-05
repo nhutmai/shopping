@@ -1,6 +1,6 @@
 import axios from "axios";
 
-var url = "http://localhost:4000/product";
+var url = "https://agriculturalshopserver.vercel.app/product";
 
 const getproduct = () => {
   return axios
