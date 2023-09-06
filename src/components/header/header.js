@@ -36,7 +36,7 @@ function Header() {
       </div>
       <div className="login">
         <LoginOutlined />
-        <NavLink to="/login">đăng nhập</NavLink>
+        <NavLink to="/login">tài khoản</NavLink>
       </div>
       <div className="cart">
         <ShoppingCartOutlined style={{ color: "#ff6600", fontSize: 20 }} />

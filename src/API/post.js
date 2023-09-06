@@ -1,11 +1,14 @@
 import axios from "axios";
-
-var url = "http://localhost:4000/account";
-// var account = { name: "student", pass: "1" };
+var url = "https://agriculturalshopserver.vercel.app/login";
+const config = {
+  headers: {
+    "Content-Type": "application/json",
+  },
+};
 
 const getproduct = (account) => {
   return axios
-    .post(url, account)
+    .post(url, account, config)
     .then((response) => {
       return response.data;
     })

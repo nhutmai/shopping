@@ -80,3 +80,10 @@ input.error {
 .quenmk {
   color: aliceblue;
 }
+.success {
+  background-color: #4caf50; /* Màu nền */
+  color: rgb(10, 9, 9); /* Màu chữ */
+  padding: 10px; /* Khoảng cách đệm */
+  text-align: center; /* Căn giữa văn bản */
+  font-size: 300%;
+}
