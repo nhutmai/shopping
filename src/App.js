@@ -7,12 +7,14 @@ import about from "./components/about/about";
 import cart from "./components/cart/cart";
 import Login from "./page/login/login";
 import Homepage from "./components/home/home";
+import Account from "./page/login/account";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <Routes>
+        <Route path="/account" Component={Account} />
         <Route path="/login" Component={Login} />
         <Route path="/" Component={Homepage} />
         <Route path="/products" Component={ProductList} />
