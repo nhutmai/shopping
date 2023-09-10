@@ -1,6 +1,6 @@
 import axios from "axios";
-
-var url = "https://agriculturalshopserver.vercel.app/product";
+import { linkCallApi } from "../resources/link.js";
+var url = linkCallApi + "/product";
 
 const getproduct = () => {
   return axios

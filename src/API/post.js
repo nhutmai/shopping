@@ -1,5 +1,6 @@
 import axios from "axios";
-var url = "https://agriculturalshopserver.vercel.app/login";
+import { linkCallApi } from "../resources/link.js";
+var url = linkCallApi + "/login";
 const config = {
   headers: {
     "Content-Type": "application/json",

@@ -1,0 +1,10 @@
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.logout {
+  font-size: large;
+  margin: 50px;
+  max-width: 200px;
+}
