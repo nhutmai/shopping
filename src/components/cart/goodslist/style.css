@@ -1,0 +1,54 @@
+.goodslist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  flex-direction: column;
+}
+.good {
+  display: flex;
+  background-color: #f2f2f2;
+  align-items: center;
+  justify-content: stretch;
+  padding: 10px 20px;
+  min-height: 60px;
+  margin: 10px 0;
+}
+.good_name {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.good_name-img {
+  flex: 0.8;
+  background-color: #b7b1be;
+  height: 100px;
+}
+.good_name-name {
+  flex: 1;
+}
+.good_name-check {
+  flex: 0.1;
+}
+.good_price {
+  flex: 1.5;
+}
+.good_numbers {
+  flex: 1;
+}
+.good_totalprice {
+  flex: 1;
+}
+.clear {
+  flex: 0.1;
+  background-color: #7e22d9;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.clear:hover {
+  background-color: #7e22d956;
+}

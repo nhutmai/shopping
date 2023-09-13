@@ -7,7 +7,7 @@ import about from "./components/about/about";
 import cart from "./components/cart/cart";
 import Login from "./page/login/login";
 import Homepage from "./components/home/home";
-import Account from "./page/login/account";
+import Account from "./page/login/account/account";
 
 function App() {
   return (

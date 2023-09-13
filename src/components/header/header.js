@@ -34,7 +34,7 @@ function Header() {
         <input type="text" placeholder="Search products" />
         <button>Search</button>
       </div>
-      <div className="account">
+      <div className="header_account">
         <LoginOutlined />
         <NavLink to="/account">tài khoản</NavLink>
       </div>

@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import checkLogin from "../../API/checklogin";
+import checkLogin from "../../../API/checklogin";
 import { useSelector, useDispatch } from "react-redux";
-import { logout } from "../../redux/Slice/Authslice";
+import { logout } from "../../../redux/Slice/Authslice";
+import "./account.css";
 
 function Account() {
   // khai báo lên authenticated
@@ -33,7 +34,7 @@ function Account() {
   return (
     <>
       {isLogin ? (
-        <div className="main">
+        <div className="account">
           <h3>Thông tin tài khoản</h3>
           <div>Tên tài khoản: {user.name}</div>
           <button

@@ -75,3 +75,8 @@
   color: rgb(250, 246, 246);
   text-decoration: none;
 }
+.header_account {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
