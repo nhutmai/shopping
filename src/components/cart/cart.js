@@ -1,7 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 import Goodslist from "./goodslist/goodslist";
+import { useDispatch, useSelector } from "react-redux";
+import { check } from "../../redux/Slice/carCheckbox";
 function Cart() {
+  const isChecked = useSelector((state) => state.cartcheckbox.isChecked);
+  const dispatch = useDispatch();
   const goods = [
     {
       name: "ca chua",
@@ -82,7 +86,14 @@ function Cart() {
         <h3 className="giohang">GIỎ HÀNG</h3>
         <div className="menubar">
           <div className="bar_1">
-            <input type="checkbox" name="checkall" />
+            <input
+              type="checkbox"
+              name="checkall"
+              checked={isChecked}
+              onChange={() => {
+                dispatch(check());
+              }}
+            />
             <label name="checkall" className="checkall">
               Tất cả
             </label>
